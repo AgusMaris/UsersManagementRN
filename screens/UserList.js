@@ -1,7 +1,6 @@
 import React, {useState, useEffect}from 'react'
 import { View, Text, Button, ScrollView } from 'react-native'
 import firebase from '../database/firebase'
-
 const UserList = (props) => {
     const [users, setUsers]=useState([]);
     useEffect(()=>{
