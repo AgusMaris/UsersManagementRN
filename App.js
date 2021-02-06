@@ -12,9 +12,10 @@ const Stack = createStackNavigator();
 function MyStack(){
   return(
     <Stack.Navigator>
-      <Stack.Screen component={CreateUserScreen}name="CreateUserScreen"></Stack.Screen>
-      <Stack.Screen component={UserDetail} name="UserDetail"></Stack.Screen>
-      <Stack.Screen component={UserList} name="UserList"></Stack.Screen>
+      <Stack.Screen component={UserList} name="UserList" options={{title:'Users List'}}></Stack.Screen>
+      <Stack.Screen component={CreateUserScreen}name="CreateUserScreen" options={{title:'Create New User'}}></Stack.Screen>
+      <Stack.Screen component={UserDetail} name="UserDetail" options={{title:'User Detail'}}></Stack.Screen>
+      
       
       
 
